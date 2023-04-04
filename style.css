@@ -1,0 +1,198 @@
+:root{
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+   --global-padding: 20px;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body {
+
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+.title-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+.subtitle-text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+.description-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--global-padding);
+}
+.menu__navbar{
+    display: none;
+}
+
+.presentation{
+    padding: 0 var(--global-padding);
+    margin-bottom: 15px;
+}
+.presentation__title, .presentation__subtitle{
+    margin-bottom: 10px;
+}
+.presentation__image{
+    width: 98px;
+    height: 98px;
+    border-radius: 49px;
+    background-color: aqua;
+    margin: 5px 0 15px 0;
+}
+.presentation__network{
+    display: flex;
+    justify-content: space-between;
+}
+.presentation__network__item a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.aboutMe{
+    background-color: #EAF2FD;
+    padding: var(--global-padding);
+}
+.aboutMe__title{
+    margin-bottom: 12px;
+}
+
+.skills, .hobbies{
+    padding: var(--global-padding);
+    text-align: center;
+}
+.skills__title, .hobbies__title{
+    margin-bottom: 20px;
+}
+.skills__div, .hobbies__div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.skills__skill, .hobbies__hobbie{
+    width: 40vw;
+    height: 40vw;
+    margin: 10px 0;
+    background-color: #EAF2FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 6px;
+}
+
+.education, .experience{
+    display: flex;
+    flex-direction: column;
+    padding: 5px var(--global-padding);
+}
+.education__title, .experience__title{
+    align-self: center;
+    margin-bottom: 10px;
+}
+.education__div, .experience__div{
+    padding: 15px;
+    line-height: 25px;
+}
+.education__image, .experience__image{
+    height: 118px;
+    background-color: aquamarine;
+}
+
+.contact{
+    background-color: #EAF2FD;
+    padding: var(--global-padding);
+}
+.contact__title{
+    margin-bottom: 10px;
+}
+.contact__description{
+    font-weight: 500;
+    line-height: 19px;
+}
+.contact__form{
+    margin-top: 10px;
+}
+.contact__form__container{
+    display: block;
+    width: 100%;
+    height: 56px;
+    margin: 17px 0;
+    border-radius: 7px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.contact__input{
+    outline: none;
+    width: 100%;
+    padding: 0 12px;
+    position: absolute;
+    bottom: 0;
+    font-size: 16px;
+    background: transparent;
+}
+.contact__input:focus, .contact__input:valid{
+    height: 70%; 
+}
+.contact__form__label{
+    color: #A2A2A2;
+    position: absolute;
+    padding: 0 12px;
+    top: 36%;
+    font-size: 16px;
+    transition: top 0.3s, font-size 0.3s;
+}
+.contact__form__container:focus-within .contact__form__label , .contact__input:valid + span{
+    top: 9px;
+    left: 0;
+    font-size: 12px;
+    transition: top 0.3s, font-size 0.3s;
+}
+.contact__form__container:focus-within .contact__form__label{
+    color: #2A7AE4;
+}
+.contact__form__container[data-type = "mensaje"]{
+    height: 130px;
+}
+.contact__form__container[data-type = "mensaje"] textarea{
+    resize: none;
+    padding: 15px 12px;
+    min-height: 86%;
+}
+.contact__btn{
+    width: 133px;
+    height: 40px;
+    background-color: #F0D05E;
+    color: #FFFFFF;
+}
+
+footer{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
