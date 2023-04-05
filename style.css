@@ -37,7 +37,7 @@ a{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 18px;
 }
 
 .menu{
@@ -51,17 +51,18 @@ a{
 }
 
 .presentation{
-    padding: 0 var(--global-padding);
-    margin-bottom: 15px;
+    padding: var(--global-padding);
+    margin-bottom: 25px;
 }
 .presentation__title, .presentation__subtitle{
     margin-bottom: 10px;
 }
 .presentation__image{
-    width: 98px;
-    height: 98px;
-    border-radius: 49px;
-    background-color: aqua;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 15vw;
+    background-image: url("./assets/presentation-image.png");
+    background-size: 130%;
     margin: 5px 0 15px 0;
 }
 .presentation__network{
@@ -93,18 +94,25 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: initial;
 }
 .skills__skill, .hobbies__hobbie{
     width: 40vw;
-    height: 40vw;
+    height: 30vw;
+    max-width: 224px;
+    max-height: 118px;
     margin: 10px 0;
-    background-color: #EAF2FD;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 6px;
+    display: block;
+    padding: 0 0 15px 10px;
+    background-color: #FFFFFF;
+}
+.skills__skill__image, .hobbies__hobbie__image{
+    height: 90%;
 }
 
+.education{
+    background-color: #EAF2FD;
+}
 .education, .experience{
     display: flex;
     flex-direction: column;
@@ -112,15 +120,36 @@ a{
 }
 .education__title, .experience__title{
     align-self: center;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 .education__div, .experience__div{
     padding: 15px;
     line-height: 25px;
 }
-.education__image, .experience__image{
-    height: 118px;
-    background-color: aquamarine;
+.education__image{
+    height: 30vw;
+    background-color: #FFFFFF;
+}
+
+.expirience__div__buttons{
+    width: 32vw;
+    height: 40px;
+    margin: 10px 4px;
+}
+.expirience__div__buttons a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #2A7AE4;
+    justify-content: center;
+    align-items: center;
+}
+.expirience__div__buttons:nth-child(1) a{
+    color: #2A7AE4;
+}
+.expirience__div__buttons:nth-child(2) a{
+    color: #FFFFFF;
+    background-color: #2A7AE4;
 }
 
 .contact{
@@ -142,9 +171,11 @@ a{
     width: 100%;
     height: 56px;
     margin: 17px 0;
-    border-radius: 7px;
+    border-bottom: 1px solid #C8C8C8;
+    border-radius: 4px;
     position: relative;
     background-color: #FFFFFF;
+    overflow: hidden;
 }
 .contact__input{
     outline: none;
@@ -154,9 +185,17 @@ a{
     bottom: 0;
     font-size: 16px;
     background: transparent;
+    border-bottom: 2px solid #2A7AE4;
+    border-radius: 4px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
 }
 .contact__input:focus, .contact__input:valid{
     height: 70%; 
+}
+.contact__input:focus{
+    transform: translateX(0%);
+    transition: transform 0.3s ease;
 }
 .contact__form__label{
     color: #A2A2A2;
@@ -194,5 +233,3 @@ footer{
     padding: 50px 20px;
     text-align: center;
 }
-
-

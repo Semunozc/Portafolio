@@ -1,0 +1,68 @@
+
+.image{
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+.javaScript-image{
+    background-image: url("./assets/javaScript_icon.png");
+    background-size: 37%;
+}
+.php-image{
+    background-image: url("./assets/php_icon.png");
+    background-size: 43%;
+}
+.react-image{
+    background-image: url("./assets/react_icon.png");
+    background-size: 37%;
+}
+.html-image{
+    background-image: url("./assets/html_icon.png");
+    background-size: 38%;
+}
+.css-image{
+    background-image: url("./assets/css_icon.png");
+    background-size: 38%;
+}
+
+.taekwondo-image{
+    background-image: url("./assets/taekwondo_icon.png");
+    background-size: 38%;
+}
+.videogames-image{
+    background-image: url("./assets/videogames_icon.png");
+    background-size: 34%;
+}
+.photo-image{
+    background-image: url("./assets/photo_icon.png");
+    background-size: 36%;
+}
+.series-image{
+    background-image: url("./assets/series_icon.png");
+    background-size: 38%;
+}
+.music-image{
+    background-image: url("./assets/music_icon.png");
+    background-size: 37%;
+}
+
+.mision-tic-image{
+    background-image: url("./assets/min-tic_icon.png");
+    background-size: 66%;
+    background-position: center;
+}
+.oracle-one-image{
+    background-image: url("./assets/oracle-one_icon.png");
+    background-size: 47%;
+    background-position: center;
+}
+.university-image{
+    background-image: url("./assets/universidad_icon.png");
+    background-size: 80%;
+    background-position: center;
+}
+.encrypter-image{
+    background-image: url("./assets/encrypter_icon.png");
+    background-size: cover;
+    background-position: center;
+    height: 40vw;
+}
