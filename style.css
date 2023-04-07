@@ -199,10 +199,8 @@ a{
     transform: translateX(-100%);
     transition: transform 0.3s ease;
 }
-.contact__input:focus, .contact__input:valid{
+.contact__input:focus, .contact__input:valid, .semi-valid{
     height: 70%; 
-}
-.contact__input:focus{
     transform: translateX(0%);
     transition: transform 0.3s ease;
 }
@@ -214,7 +212,7 @@ a{
     font-size: 16px;
     transition: top 0.3s, font-size 0.3s;
 }
-.contact__form__container:focus-within .contact__form__label , .contact__input:valid + span{
+.contact__form__container:focus-within .contact__form__label , .contact__input:valid + span, .semi-valid + span{
     top: 9px;
     left: 0;
     font-size: 12px;
@@ -223,10 +221,10 @@ a{
 .contact__form__container:focus-within .contact__form__label{
     color: #2A7AE4;
 }
-.contact__form__container[data-type = "mensaje"]{
+.contact__form__container:nth-child(4){
     height: 130px;
 }
-.contact__form__container[data-type = "mensaje"] textarea{
+.contact__form__container:nth-child(4) textarea{
     resize: none;
     padding: 15px 12px;
     min-height: 86%;

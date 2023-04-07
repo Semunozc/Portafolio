@@ -130,29 +130,30 @@
         <p class="contact__description subtitle-text">Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p>
         <form class="contact__form" action="">
             <label class="contact__form__container">
-                <input class="contact__input"  type="text" name="nombre" id="" required >
+                <input class="contact__input"  type="text" name="nombre" data-type="name" required maxlength="50">
                 <span class="contact__form__label">Nombre</span>
             </label>
             <label class="contact__form__container">
-                <input class="contact__input" type="email" name="email" id="" required >
+                <input class="contact__input" type="email" name="email" data-type="email" required>
                 <span class="contact__form__label" >E-mail</span>
             </label>
             <label class="contact__form__container">
-                <input class="contact__input" type="text" name="asunto" id="" required >
+                <input class="contact__input" type="text" name="asunto" data-type="subject" required maxlength="50">
                 <span class="contact__form__label">Asunto</span>
             </label>
-            <label class="contact__form__container" data-type="mensaje">
-                <textarea class="contact__input" name="message" id="" required ></textarea>
+            <label class="contact__form__container">
+                <textarea class="contact__input" name="message"  data-type="message" required maxlength="300"></textarea>
                 <span class="contact__form__label">Mensaje</span>
             </label>
             <input class="contact__btn" type="submit" value="Enviar mensaje">
-            </input>
         </form>
     </section>
     <footer>
         <p>
-            Desarrollado por Sergio Muñoz x
+            Desarrollado por Sergio Muñoz
         </p>
     </footer>
+
+    <script type="module" src="app.js"></script>
 </body>
 </html>
