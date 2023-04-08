@@ -138,6 +138,7 @@ a{
 .education__image{
     height: 30vw;
     background-color: #FFFFFF;
+    margin-bottom: 10px;
 }
 
 .experience__div__button{
